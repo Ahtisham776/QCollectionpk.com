@@ -1,5 +1,5 @@
 .bg-color {
-    background-color: #06063c;
+    background-color: #28286f;
     color: white;
 }
 
@@ -16,6 +16,37 @@
     color: #232f3e;
     background-color: #ff9900;
     border-color: #ff9900;
+}
+
+.white-btn {
+    color: white;
+    font-size: small;
+    margin-left: 10px;
+}
+
+.w-60 {
+    width: 50px !important;
+}
+
+.w-70 {
+    width: 80px !important;
+}
+
+.white-btn li {
+    text-align: center;
+    align-items: center;
+}
+
+.white-btn:hover {
+    color: #ff9900;
+}
+
+.btn {
+    font-size: 13px !important
+}
+
+.w-80 {
+    width: 155px !important;
 }
 
 
@@ -74,7 +105,7 @@
 }
 
 .sidebar-social a:hover i.fa-shopping-basket {
-    color: #FF9900;
+    color: #CB934F;
 }
 
 
