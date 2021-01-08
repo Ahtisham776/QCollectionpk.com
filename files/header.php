@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .highlight 
+        {       
+            font-weight: bold;
+            box-shadow: 1px 1px 5px #146eb4;
+        }
+
+        .highlighted 
+        {   
+            box-shadow: 1px 1px 5px #CB934F;
+            font-weight: bold;
+        }
+	
+    </style>
 </head>
 
 <body>
@@ -83,10 +97,15 @@
                 aria-hidden="true"></i></span>
         </div>
     </form>
-    <div class="form-inline my-2 my-lg-0 ml-5 sidebar-social cart-button">
-    <ul>
-        <li>
-            <a href="" title="Cart" rel="nofollow">
+    <div class="form-inline my-2 my-lg-0 ml-5 sidebar-social ">
+    <ul class="text-center">
+        <li class="mr-4">
+            <a href="" rel="nofollow" >
+                <i class="fa fa-user-circle"></i><span>Login</span>
+            </a>
+        </li>
+        <li class="cart-button">
+            <a href="" title="Cart" class="sub" rel="nofollow">
                 <i class="fa fa-shopping-basket"></i><span>cart</span>
             </a>
             <div class="cart-dropdown">
@@ -116,60 +135,83 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active btn-special">
-        <a href="">
-            <i class="fa fa-twitter fa-lg pr-3" aria-hidden="true"></i>
+  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto white-btn" >
+      <li class="nav-item active btn-special" id="btn">
+        <a href="" >
+            <input type="text" value="Weekly offers" class="btn ml-1 text-uppercase" style="color: #CB934F">
         </a>
       </li>
       <li class="nav-item">
-        <a href="">
-            <i class="fa fa-facebook fa-lg pr-3" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a href="">
-            <i class="fa fa-youtube fa-lg pr-3" aria-hidden="true"></i>
+        <a href="" >
+            <input type="text" value="New arrivals" class="btn ml-1 text-uppercase  w-80  white-btn" >
         </a>
       </li>
       <li class="nav-item">
-        <a href="">
-            <i class="fa fa-instagram fa-lg pr-3" aria-hidden="true"></i>
+        <a href="" >
+            <input type="text" value="HOme" class="btn w-60 px-0 ml-1 text-uppercase ml-1  white-btn" >
         </a>
       </li>
       <li class="nav-item">
-        <a href="">
-            <i class="fa fa-envelope pr-3" aria-hidden="true"></i>
+        <a href="" >
+            <input type="text" value="men" class="btn w-60 px-0 text-uppercase  white-btn" >
         </a>
       </li>
       <li class="nav-item">
-        <a href="">
-            <small class="pr-3">+92 348 1112356</small>
+        <a href="" >
+            <input type="text" value="women" class="btn w-70 text-uppercase  white-btn" >
         </a>
       </li>
       <li class="nav-item">
-        <a href="">
-            <small>30 DAYS HAPPINESS GUARANTEE</small>
+        <a href="" >
+            <input type="text" value="Kids" class="btn w-60 px-0 text-uppercase  white-btn" >
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="" >
+            <input type="text" value="big and tall" class="btn w-80 text-uppercase  white-btn" >
         </a>
       </li>
     </ul>
     <div class="form-inline my-2 my-lg-0">
-    <ul class="navbar-nav small">
-    <li class="nav-item">
-        <a href="">
-            <p class="pr-4 pt-2">HELP</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="">
-            <p class="pt-2">RETURN & EXCHANGE</p>
-        </a>
-      </li>
-      </ul>
+    <!-- <ul class="navbar-nav small">
+        <li class="nav-item">
+            <a href="">
+                <p class="pr-4 pt-2">HELP</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="">
+                <p class="pt-2">RETURN & EXCHANGE</p>
+            </a>
+        </li>
+      </ul> -->
     </div>
   </div>
 </nav>
 </div>
+
+
+
+<script>
+    function blink(btn) {
+    blink1(btn);
+}
+function blink1(btn1) {
+    //document.getElementById(btn1).className = ;
+    btn1.removeClass();
+    btn1.addClass("highlight");
+    setTimeout(function () { blink2(btn1); }, 750);
+}
+
+function blink2(btn2) {
+    //document.getElementById(btn2).className = "highlighted";
+    btn2.removeClass();
+    btn2.addClass("highlighted");
+    setTimeout(function () { blink1(btn2); }, 750);
+}
+
+blink($('#btn'));
+</script>
 </body>
 </html>
